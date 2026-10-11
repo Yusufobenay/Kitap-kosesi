@@ -119,17 +119,17 @@ Görevler:
 - [x] CSS'te kullanılmayan kurallar temizlendi.
 - [x] Erişilebilirlik ve klavye odağı kontrol edildi.
 - [x] README'ye proje açıklaması, sayfalar, çalıştırma ve bilinen sınırlamalar eklendi.
-- [ ] Code review checklist tamamlandı.
+- [x] Code review checklist tamamlandı.
 
 ## JavaScript'e geçiş kapısı
 
 Öğrenci aşağıdaki sorulara kendi cümleleriyle cevap verebiliyorsa JavaScript aşamasına geçebilir:
-1. HTML ile CSS'in sorumlulukları nedir?
-2. Semantik HTML neden önemlidir?
-3. Flexbox ve Grid'i hangi durumda seçersin?
-4. CSS cascade ve specificity bir çakışmayı nasıl çözer?
-5. Responsive tasarım nasıl test edilir?
-6. Bir formun tarayıcı doğrulaması ile sunucu tarafı doğrulaması arasındaki fark nedir?
-7. Statik bir arayüzün neden tek başına sepet veya filtreleme yapamayacağını açıklayabilir misin?
+1. HTML ile CSS'in sorumlulukları nedir? Cevap:  * HTML sayfanın iskeletini ve içeriğini kurar; CSS görsel tasarımını ve yerleşimini yapar.
+2. Semantik HTML neden önemlidir? Cevap:  * Ekran okuyucuların ve arama motorlarının sayfayı doğru anlamasını sağlar, erişilebilirliği artırır.
+3. Flexbox ve Grid'i hangi durumda seçersin? Cevap: * Tek boyutlu dizilimlerde (satır veya sütun) Flexbox; iki boyutlu ızgara yapılarında Grid seçilir.
+4. CSS cascade ve specificity bir çakışmayı nasıl çözer? Cevap:   * özgüllüğü yüksek olan seçici kazanır. Eşitlik varsa CSS'te daha altta yazılan kural geçerli olur.
+5. Responsive tasarım nasıl test edilir? Cevap:  * Tarayıcı geliştirici araçlarında mobil, tablet ve masaüstü ekran genişliklerine geçilerek taşma ve kırılmalar kontrol edilir.
+6. Bir formun tarayıcı doğrulaması ile sunucu tarafı doğrulaması arasındaki fark nedir? Cevap: * Tarayıcı tarafı kullanıcıya anında görsel uyarı verir; sunucu tarafı ise güvenlik ve veritabanı kontrolü için zorunludur.
+7. Statik bir arayüzün neden tek başına sepet veya filtreleme yapamayacağını açıklayabilir misin? Cevap: * HTML ve CSS veriyi bellekte tutamaz ve mantıksal işlem yapamaz; dinamik hesaplama ve filtreleme için JavaScript gerekir.
 
 **Sonraki modül:** JavaScript ile katalog arama/filtreleme, favorilere ekleme, sepet adedi ve toplam tutarı hesaplama, form geri bildirimi. Ardından modüler JavaScript ve daha sonra React bileşenlerine geçiş.

@@ -79,17 +79,17 @@ Görevler:
 - [x] Kataloğa iki yeni kitap kartı ekle.
 - [x] Kartların farklı metin uzunluklarında nasıl davrandığını kontrol et.
 - [x] 4 sütundan 2 sütuna geçiş yapan media query'yi açıklayarak yorum satırı ekle.
-- [ ] Grid'de `minmax(0, 1fr)` kullanımının taşmayı nasıl etkilediğini araştır. *Cevap: * Düz `1fr` kullanınca grid elemanları varsayılan olarak `auto` minimum genişlik alıyor, bu yüzden uzun bir metin veya resim olunca sütun dışarı taşıp yatay kaydırma çıkarabiliyor. Başına `minmax(0, 1fr)` yazınca minimum genişliği sıfıra çekiyoruz, böylece içerik sütunu genişletip dışarı taşamıyor ve düzgünce sığıyor.
+- [x] Grid'de `minmax(0, 1fr)` kullanımının taşmayı nasıl etkilediğini araştır. *Cevap: * Düz `1fr` kullanınca grid elemanları varsayılan olarak `auto` minimum genişlik alıyor, bu yüzden uzun bir metin veya resim olunca sütun dışarı taşıp yatay kaydırma çıkarabiliyor. Başına `minmax(0, 1fr)` yazınca minimum genişliği sıfıra çekiyor, böylece içerik sütunu genişletip dışarı taşamıyor ve düzgünce sığıyor.
 
 ## Aşama 7 — Responsive tasarım
 **Kavramlar:** viewport, mobile-first düşünme, media query, `clamp`, esnek ölçüler, taşma testi.
 
 Görevler:
-- [ ] 1440px, 1024px, 768px, 390px ve 320px genişliklerde test et.
-- [ ] Hiçbir ekran boyutunda yatay kaydırma olmamasını sağla.
-- [ ] Bir mobil ekran görüntüsü ve bir masaüstü ekran görüntüsü teslim et.
-- [ ] Media query'leri yalnızca gerektiği yerde ekle; her elemana ayrı breakpoint yazma.
-- [ ] Dokunma hedeflerinin rahat kullanılabildiğini kontrol et.
+- [x] 1440px, 1024px, 768px, 390px ve 320px genişliklerde test et. 
+- [x] Hiçbir ekran boyutunda yatay kaydırma olmamasını sağla.  Cevap:* En dar ekranlarda bile taşma veya yatay kaydırma çubuğu oluşmadı.
+- [x] Bir mobil ekran görüntüsü ve bir masaüstü ekran görüntüsü teslim et. 
+- [x] Media query'leri yalnızca gerektiği yerde ekle; her elemana ayrı breakpoint yazma. *Cevap: Her bileşen için farklı piksellerde sorgu açmak yerine ortak tablet (900px/720px) ve mobil (520px) breakpoint'leri kullandım. Başlık boyutlandırmalarında clamp() kullanarak gereksiz media query yazımının önüne geçtim.
+- [x] Dokunma hedeflerinin rahat kullanılabildiğini kontrol et. *Cevap: * Mobilde butonların ve form alanlarının dokunma yüksekliklerini (min-height: 46px ve 52px) kontrol ettim. Elemanlar arasına yeterli boşluk bırakılarak parmakla rahat tıklanabilir olmasını sağladım.
 
 ## Aşama 8 — Tasarım sistemini anlama ve refactor
 **Kavramlar:** CSS variables, ortak layout, naming, tekrar azaltma, dosya sorumlulukları.

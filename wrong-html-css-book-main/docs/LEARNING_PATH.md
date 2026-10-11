@@ -76,10 +76,10 @@ Görevler:
 **Kavramlar:** `display:grid`, `grid-template-columns`, `minmax`, `repeat`, responsive kart dizilimi.
 
 Görevler:
-- [ ] Kataloğa iki yeni kitap kartı ekle.
-- [ ] Kartların farklı metin uzunluklarında nasıl davrandığını kontrol et.
-- [ ] 4 sütundan 2 sütuna geçiş yapan media query'yi açıklayarak yorum satırı ekle.
-- [ ] Grid'de `minmax(0, 1fr)` kullanımının taşmayı nasıl etkilediğini araştır.
+- [x] Kataloğa iki yeni kitap kartı ekle.
+- [x] Kartların farklı metin uzunluklarında nasıl davrandığını kontrol et.
+- [x] 4 sütundan 2 sütuna geçiş yapan media query'yi açıklayarak yorum satırı ekle.
+- [ ] Grid'de `minmax(0, 1fr)` kullanımının taşmayı nasıl etkilediğini araştır. *Cevap: * Düz `1fr` kullanınca grid elemanları varsayılan olarak `auto` minimum genişlik alıyor, bu yüzden uzun bir metin veya resim olunca sütun dışarı taşıp yatay kaydırma çıkarabiliyor. Başına `minmax(0, 1fr)` yazınca minimum genişliği sıfıra çekiyoruz, böylece içerik sütunu genişletip dışarı taşamıyor ve düzgünce sığıyor.
 
 ## Aşama 7 — Responsive tasarım
 **Kavramlar:** viewport, mobile-first düşünme, media query, `clamp`, esnek ölçüler, taşma testi.

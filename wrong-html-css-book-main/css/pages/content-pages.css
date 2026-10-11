@@ -44,7 +44,6 @@
   letter-spacing: 0.05em;
 }
 
-/* Kapak Renkleri — Değişkenlerle Bağlandı */
 .cover-coral {
   background-color: var(--color-coral-cover);
 }
@@ -112,7 +111,6 @@
   color: var(--color-ink);
 }
 
-/* Tablet ve dar ekranlarda kartlar sıkışmasın diye 4 sütundan 2 sütuna düşürüyoruz */
 @media (max-width: 900px) {
   .book-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -124,4 +122,69 @@
   .book-grid {
     grid-template-columns: minmax(0, 1fr);
   }
+}
+
+.form-panel {
+  max-width: 640px;
+  background: var(--color-white);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgb(36 39 32 / 8%);
+  margin-top: 30px;
+}
+
+.form-panel h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.form-panel > p {
+  margin-bottom: 24px;
+}
+
+.form-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-field label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.form-control,
+.form-field textarea,
+.form-field select,
+.form-field input {
+  width: 100%;
+  min-height: 48px;
+  padding: 10px 14px;
+  border: 1px solid #d9d5ca;
+  border-radius: 8px;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.form-field textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-control:focus,
+.form-field textarea:focus,
+.form-field select:focus,
+.form-field input:focus {
+  outline: 2px solid var(--color-coral);
+  background: var(--color-white);
 }

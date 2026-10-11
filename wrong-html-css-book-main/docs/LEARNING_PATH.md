@@ -95,18 +95,30 @@ Görevler:
 **Kavramlar:** CSS variables, ortak layout, naming, tekrar azaltma, dosya sorumlulukları.
 
 Görevler:
-- [ ] En az üç tekrar eden değeri CSS değişkenine dönüştür.
-- [ ] Aynı işi yapan tekrar selector'ları bul ve birleştir.
-- [ ] Yeni bir “favoriler” sayfasının iskeletini ortak header/footer yapısını kullanarak oluştur.
-- [ ] Dosya adlarının ve sınıf adlarının amacını açıklayan mini sözlük yaz.
+- [X] En az üç tekrar eden değeri CSS değişkenine dönüştür. 
+- [X] Aynı işi yapan tekrar selector'ları bul ve birleştir.
+- [x] Yeni bir “favoriler” sayfasının iskeletini ortak header/footer yapısını kullanarak oluştur. Cevap: * Ortak header, footer ve temel sayfa bileşenlerini (page-hero, cart-empty, skip-link) kullanarak pages/favorites.html dosyasını oluşturdum.
+- [x] Dosya adlarının ve sınıf adlarının amacını açıklayan mini sözlük yaz.  * Dosyalar ve sınıflar için kısa açıklama:
+  * variables.css: Renk ve font değişkenleri.
+  * reset.css: Tarayıcı varsayılanlarını sıfırlama.
+  * typography.css: Genel metin ve başlık fontları.
+  * header.css / footer.css: Üst menü ve alt bilgi alanı.
+  * cards.css: Kitap kartları ve grid düzeni.
+  * buttons.css: Buton stilleri.
+  * content-pages.css: Sayfalara özel yerleşimler ve formlar.
+  * .container: Sayfayı ortalayan ana kapsayıcı.
+  * .btn: Tıklanabilir butonlar.
+  * .product-card: Kitap kartı.
+  * .book-grid: Kartların dizildiği grid alanı.
+  * .page-hero: Sayfa üstü başlık alanı.
 
 ## Aşama 9 — HTML/CSS final kontrolü
-- [ ] Tüm sayfalar birbirine bağlanıyor.
-- [ ] Responsive kontroller tamamlandı.
-- [ ] HTML doğrulayıcı ile hatalar kontrol edildi.
-- [ ] CSS'te kullanılmayan kurallar temizlendi.
-- [ ] Erişilebilirlik ve klavye odağı kontrol edildi.
-- [ ] README'ye proje açıklaması, sayfalar, çalıştırma ve bilinen sınırlamalar eklendi.
+- [x] Tüm sayfalar birbirine bağlanıyor. Cevap:* Header ve footer içindeki menü linkleri ile sepet/katalog butonlarının sayfalar arası geçiş yollarını kontrol ettim, kırık link kalmadı.
+- [x] Responsive kontroller tamamlandı. Cevap: * 1440px masaüstü ve 390px mobil ekran genişliklerinde test edildi; taşma ve kayma olmadan düzenin korunduğu doğrulandı.
+- [x] HTML doğrulayıcı ile hatalar kontrol edildi. 
+- [x] CSS'te kullanılmayan kurallar temizlendi.
+- [x] Erişilebilirlik ve klavye odağı kontrol edildi.
+- [x] README'ye proje açıklaması, sayfalar, çalıştırma ve bilinen sınırlamalar eklendi.
 - [ ] Code review checklist tamamlandı.
 
 ## JavaScript'e geçiş kapısı

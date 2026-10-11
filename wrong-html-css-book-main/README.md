@@ -54,16 +54,44 @@ kitap-kosesi/
 
 ## Tamamlanma ölçütü
 
-- [ ] Tüm sayfalar arasında tutarlı gezinme var.
-- [ ] Hiçbir sayfada yatay taşma yok.
-- [ ] HTML semantik ve girintileme tutarlı.
-- [ ] CSS tekrarları azaltılmış, değişkenler kullanılmış.
-- [ ] Form alanlarında label ve uygun input türleri var.
-- [ ] Görseller için anlamlı `alt` metinleri var.
-- [ ] Hata ayıklama görevleri çözüldü ve çözümlerle karşılaştırıldı.
-- [ ] Öğrenci code review listesini doldurdu.
-- [ ] GitHub deposunda anlamlı commit geçmişi var.
+- [x] Tüm sayfalar arasında tutarlı gezinme var.
+- [x] Hiçbir sayfada yatay taşma yok.
+- [x] HTML semantik ve girintileme tutarlı.
+- [x] CSS tekrarları azaltılmış, değişkenler kullanılmış.
+- [x] Form alanlarında label ve uygun input türleri var.
+- [x] Görseller için anlamlı `alt` metinleri var.
+- [x] Hata ayıklama görevleri çözüldü ve çözümlerle karşılaştırıldı.
+- [x] Öğrenci code review listesini doldurdu.
+- [x] GitHub deposunda anlamlı commit geçmişi var.
 
 ## Önemli not
 
 `exercises/debugging/` içindeki dosyalarda **bilerek bırakılmış hatalar** bulunur. Önce `solutions/` klasörüne bakmadan çözmeye çalış. Çözümler öğretmen/öz değerlendirme amacıyla ayrı tutulmuştur.
+
+# KitapKöşesi
+
+KitapKöşesi, kitap severler için tasarlanmış modern, sade ve erişilebilir bir online kitapçı arayüzü konseptidir. Bu proje, temiz HTML5 semantiği ve modüler CSS mimarisi standartlarına uygun olarak geliştirilmiştir.
+
+## 📄 Proje Sayfaları
+
+- **Ana Sayfa (`index.html`)**: Öne çıkan kitaplar, avantajlar bandı ve bülten kayıt alanı.
+- **Kitaplar / Katalog (`pages/catalog.html`)**: Kategori ve sıralama filtreleriyle listelenen kitap koleksiyonu.
+- **Kitap Detayı (`pages/book-detail.html`)**: Kitap künyesi, açıklaması, puanı ve sepete ekleme alanı.
+- **Favorilerim (`pages/favorites.html`)**: Kullanıcının kaydettiği kitapların listelendiği sayfa taslağı.
+- **Sepetim (`pages/cart.html`)**: Boş sepet durumu ve alışveriş adımları taslağı.
+- **Hikâyemiz (`pages/about.html`)**: Projenin ortaya çıkış vizyonu ve içerik düzeni.
+- **İletişim (`pages/contact.html`)**: Kullanıcı geri bildirim ve mesaj formu.
+- **Giriş Yap (`pages/login.html`)**: Kullanıcı giriş arayüzü taslağı.
+
+## 🚀 Çalıştırma
+
+Projeyi yerel ortamda görüntülemek için:
+
+1. Proje klasörünü **VS Code** ile açın.
+2. `Live Server` eklentisini kullanarak kök dizindeki `index.html` dosyasına sağ tıklayıp **"Open with Live Server"** seçeneğini seçin.
+3. Tarayıcıda `http://127.0.0.1:5500` adresinden sayfalar arası gezinmeyi test edin.
+
+## ⚠️ Bilinen Sınırlamalar
+
+- **Dinamik İşlevler:** Sepete ürün ekleme/çıkarma, favori listesini güncelleme, arama ve filtreleme gibi dinamik mantıklar henüz aktif değildir; bu işlevler bir sonraki JavaScript aşamasında entegre edilecektir.
+- **Form Gönderimleri:** İletişim ve bülten formları arayüz düzeyindedir; bir backend sunucusuna veya API'ye bağlı değildir.

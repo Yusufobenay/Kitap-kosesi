@@ -67,10 +67,10 @@ Görevler:
 **Kavramlar:** `display:flex`, `align-items`, `justify-content`, `gap`, flex-wrap, tekrar kullanılabilir sınıflar.
 
 Görevler:
-- [ ] Header içindeki marka, navigasyon ve aksiyon alanlarının hizalanmasını incele.
-- [ ] Footer bağlantılarının neden dikey flex düzeni kullandığını açıkla.
-- [ ] Bir buton varyantı oluştur: `.button-outline`.
-- [ ] Butonun hover hâlini klavye odağıyla karıştırmadan test et.
+- [x] Header içindeki marka, navigasyon ve aksiyon alanlarının hizalanmasını incele. * Header'da display: flex; kullanılmış. Logo, menü ve sepet butonunun yatayda iki uca yayılması justify-content: space-between, dikeyde aynı hizada ortalanması ise align-items: center ile sağlanmış.
+- [x] Footer bağlantılarının neden dikey flex düzeni kullandığını açıkla.  *Cevap:  Footer bağlantılarının alt alta düzenli bir sütun halinde durması için flex-direction: column; kullanılmış. Linklerin aralığı da tek tek margin vermek yerine gap ile ayarlanmış.
+- [x] Bir buton varyantı oluştur: `.button-outline`.   * .button-outline sınıfı oluşturdum; arka planı şeffaf bırakıp border rengini yazı rengiyle eşitledim. Hover olunca da arka plan koyu renge dönüp yazı beyaz oluyor.
+- [x] Butonun hover hâlini klavye odağıyla karıştırmadan test et. * Fareyle butonun üstüne geldiğimde hover çalışıp renk değişti ve buton hafif yukarı kaydı. Klavyeden Tab tuşuyla butona odaklandığımda ise outline çerçevesi çıktı; iki durumun birbirinin stilini ezmediğini test ettim.
 
 ## Aşama 6 — CSS Grid ve ürün kartları
 **Kavramlar:** `display:grid`, `grid-template-columns`, `minmax`, `repeat`, responsive kart dizilimi.

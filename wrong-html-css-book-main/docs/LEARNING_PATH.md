@@ -33,10 +33,10 @@ Görevler:
 
 Görevler:
 - [ ] Tüm sayfaları bağlantılar üzerinden gez; kırık bağlantı bırakma.
-- [ ] Bir navigasyon bağlantısının neden `aria-label` kullandığını açıkla.
+- [ ] Bir navigasyon bağlantısının neden `aria-label` kullandığını açıkla. * Cevap: Ekran okuyucu kullanan görme engelli kullanıcılara menünün işlevini seslendirmek için kullanılır.
 - [ ] `Tab` tuşuyla sayfada dolaş ve odak sırasını test et.
 - [ ] Dekoratif öğelerde `aria-hidden="true"` kullanımını incele.
-- [ ] Görsel eklersen anlamlı `alt` metni yaz; dekoratif görsel için boş alt kullanmanın ne zaman uygun olduğunu araştır.
+- [ ] Görsel eklersen anlamlı `alt` metni yaz; dekoratif görsel için boş alt kullanmanın ne zaman uygun olduğunu araştır. 
 
 **Kontrol:** Bağlantı metinleri “buraya tıkla” gibi bağlamsız ifadeler olmamalı.
 
@@ -44,11 +44,11 @@ Görevler:
 **Kavramlar:** `form`, `label`, `input`, `textarea`, `select`, `required`, `type=email`, `name`, `autocomplete`.
 
 Görevler:
-- [ ] İletişim formuna telefon alanı ekle (`type="tel"`).
-- [ ] Telefon alanının zorunlu olup olmayacağına karar ver ve gerekçelendir.
-- [ ] E-posta alanına hatalı bir değer girerek tarayıcının yerleşik doğrulamasını test et.
-- [ ] Formdaki her `label` ile input `id` değerinin eşleştiğini kontrol et.
-- [ ] `name` niteliği olmayan bir input'un gönderim verisindeki farkını araştır.
+- [x] İletişim formuna telefon alanı ekle (`type="tel"`).
+- [x] Telefon alanının zorunlu olup olmayacağına karar ver ve gerekçelendir.
+- [x] E-posta alanına hatalı bir değer girerek tarayıcının yerleşik doğrulamasını test et.
+- [x] Formdaki her `label` ile input `id` değerinin eşleştiğini kontrol et.
+- [x] `name` niteliği olmayan bir input'un gönderim verisindeki farkını araştır.
 
 **Not:** Formlar sunucuya bağlı olmadığı için gerçek mesaj gönderilmez.
 
@@ -56,11 +56,12 @@ Görevler:
 **Kavramlar:** selector, specificity, inheritance, box model, margin, padding, border, renk, yazı tipi, pseudo-class.
 
 Görevler:
-- [ ] `variables.css` içindeki `--color-coral` değerini değiştir ve tüm sitede nelerin etkilendiğini yaz.
-- [ ] Bir kartın iç boşluğunu `padding` ile, dış boşluğunu `margin` ile değiştir; farkı ekran görüntüsüyle göster.
-- [ ] `:hover` ve `:focus-visible` farkını açıkla.
-- [ ] `content-pages.css` içine yeni selector eklemeden önce mevcut stilleri bul.
-- [ ] Tarayıcı DevTools'ta bir elementin computed styles panelini incele.
+- [x] `variables.css` içindeki `--color-coral` değerini değiştir ve tüm sitede nelerin etkilendiğini yaz. *Cevap: color-coral değişkeni değiştirildiğinde; tüm a butonlar (Sepetim, Bana Ulaşın, Mesajı Gönder, Kitapları Keşfet), sol üstteki logo amblemi ve vurgusu (`brand-mark`, `brand-accent`), başlıklardaki vurgu kelimeleri (italik yazılar), ana sayfadaki "Bizim Hikâyemiz" büyük banner bloğu ve mercan renkli kitap kapakları tek noktadan otomatik olarak yeni renge güncellendi.
+- [x] Bir kartın iç boşluğunu `padding` ile, dış boşluğunu `margin` ile değiştir; farkı ekran görüntüsüyle göster.
+- [x] `:hover` ve `:focus-visible` farkını açıkla.    *Cevap:hover, fareyle bir butonun veya linkin üstüne gelince çalışıyor. 
+   focus-visible` ise klavyeden Tab tuşuyla gezerken hangi elemanda olduğumuzu görmemizi sağlıyor. Fareyle tıklayınca etrafında gereksiz kutu/çerçeve çıkarmıyor ama klavyeyle gezenler için odak çizgisini gösteriyor.
+- [x] `content-pages.css` içine yeni selector eklemeden önce mevcut stilleri bul.    *Cevap:Yeni bir stil yazmadan önce `content-pages.css` dosyasına baktım.  önceden tanımlanmış sayfa başlığı, form ve grid stilleri olduğu için boş yere yeni seçici açıp kod tekrarı yapmadım, mevcut sınıfları kullandım.
+- [x] Tarayıcı DevTools'ta bir elementin computed styles panelini incele. 
 
 ## Aşama 5 — Flexbox ve ortak bileşenler
 **Kavramlar:** `display:flex`, `align-items`, `justify-content`, `gap`, flex-wrap, tekrar kullanılabilir sınıflar.

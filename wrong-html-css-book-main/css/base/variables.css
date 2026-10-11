@@ -14,4 +14,7 @@
   --container-width: 1160px;
   --radius-card: 18px;
   --shadow-soft: 0 18px 50px rgb(36 39 32 / 8%);
+  --color-border-input: #d9d5ca;
+  --color-bg-warm: #f0eadc;
+  --color-coral-cover:#e99b82;
 }

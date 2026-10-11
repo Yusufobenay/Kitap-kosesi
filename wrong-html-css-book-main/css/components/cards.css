@@ -19,9 +19,8 @@
   min-height: 315px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
   padding: 24px 18px;
   overflow: hidden;
   color: var(--color-ink);
@@ -29,6 +28,29 @@
   text-decoration: none;
   box-shadow: var(--shadow-soft);
   transition: transform 0.25s;
+}
+
+.cover-label {
+  position: static;
+  display: block;
+  font-size: 0.65 rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin: 0 0 auto 0;
+  white-space: nowrap;
+}
+
+.cover strong {
+  display: block;
+  font: 600 1.55rem/1.25 var(--font-display);
+  margin: auto 0;
+}
+
+.cover small {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  margin-top: auto;
 }
 
 .cover:hover {

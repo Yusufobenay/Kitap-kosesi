@@ -44,20 +44,21 @@
   letter-spacing: 0.05em;
 }
 
+/* Kapak Renkleri — Değişkenlerle Bağlandı */
 .cover-coral {
-  background-color: #e99b82;
+  background-color: var(--color-coral-cover);
 }
 
 .cover-blue {
-  background-color: #9bbcd0;
+  background-color: var(--color-blue);
 }
 
 .cover-yellow {
-  background-color: #eed582;
+  background-color: var(--color-yellow);
 }
 
 .cover-green {
-  background-color: #a4be9e;
+  background-color: var(--color-green);
 }
 
 .product-info {

@@ -82,6 +82,14 @@
               />
             </div>
             <div class="form-field">
+              <label for="contact-preference">Tercih Edilen İletişim Yöntemi</label>
+              <select class="form-control" id="contact-preference" name="preference">
+                <option value="email">E-posta</option>
+                <option value="phone">Telefon Araması</option>
+                <option value="whatsapp">WhatsApp / SMS</option>
+              </select>
+            </div>
+            <div class="form-field">
               <label for="contact-topic">Konu</label>
               <select class="form-control" id="contact-topic" name="topic">
                 <option value="">Bir konu seç</option>
@@ -93,6 +101,7 @@
             <div class="form-field">
               <label for="contact-message">Mesajın</label>
               <textarea
+                class="form-control"
                 id="contact-message"
                 name="message"
                 required

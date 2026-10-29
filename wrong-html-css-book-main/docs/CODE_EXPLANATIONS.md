@@ -41,6 +41,22 @@ Bu doküman kodun her satırını ezberletmek için değil, önemli kararların 
 
 Her başlık için koddan bir örnek göster ve şu soruları cevapla:
 1. Bu kod ne yapıyor?
-2. Burada kullanılmasaydı ne olurdu?
-3. Bu çözümün alternatifi var mı?
-4. Hangi durumda bu yaklaşım uygun olmaz?
+ HTML: `aria-label - required`
+**Örnek Kod:**
+httml
+<nav class="main-nav" aria-label="Ana navigasyon">
+<input id="catalog-search" type="search" placeholder="Kitap ara…" required />
+Menünün amacını ekran okuyucuya seslendirir, arama kutusunun boş gönderilmesini engeller.
+2. Burada kullanılmasaydı ne olurdu?  **Cevap: Görme engelli kullanıcılar menüyü ayırt edemezdi, form boşken submit edilebilirdi.
+3. Bu çözümün alternatifi var mı?  **Cevap: aria-labelledby vermek veya doğrulamayı saf JavaScript ile yapmak.
+4. Hangi durumda bu yaklaşım uygun olmaz? **Cevap: Ekranda görünür net bir metin başlığı varsa veya JavaScript ile çok karmaşık form kontrolleri gerekiyorsa.
+*Örnek Kod:*
+Css
+:root {
+  --color-paper: #f8f6ef;
+  --color-ink: #242720;
+}
+Bu kod ne yapıyor? **Cevap: Renkleri tek bir merkezde değişken olarak tanımlar ve tüm projede tekrar kullanılmasını sağlar.
+​Burada kullanılmasaydı ne olurdu? **Cevap: Tüm CSS dosyalarında renk kodları elle yazılırdı, tema güncellemesi ve koyu tema eklemek imkansızlaşırdı.
+​Bu çözümün alternatifi var mı? **Cevap: Tailwind gibi hazır kütüphaneler.
+​Hangi durumda bu yaklaşım uygun olmaz? **Cevap: Tek sayfalık, birkaç satırlık çok küçük ve basit projelerde gereksiz yük oluşturur.

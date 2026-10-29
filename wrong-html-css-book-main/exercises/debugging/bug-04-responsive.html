@@ -1,11 +1,12 @@
-<!doctype html>
+﻿﻿﻿﻿﻿﻿<!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8">
+    <meta name="author" content="Yusuf Oben Ay">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hata 04 — Responsive grid</title>
   <style>
-    .grid { display: grid; grid-template-columns: repeat(4, 280px); gap: 24px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
     .card { min-height: 150px; padding: 20px; background: #f0d58a; }
   </style>
 </head>

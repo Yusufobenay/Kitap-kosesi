@@ -1,0 +1,84 @@
+﻿<!doctype html>
+<html lang="tr">
+  <head>
+    <meta name="author" content="Yusuf Oben Ay">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="KitapKöşesi okuma listem" />
+    <title>Okuma Listesi | KitapKöşesi</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">içeriğe geç</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html">
+          <span class="brand-mark">K</span>
+          <span>Kitap<span class="brand-accent">Köşesi</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Ana navigasyon">
+          <a href="../index.html">Ana Sayfa</a>
+          <a href="catalog.html">Kitaplar</a>
+          <a href="favorites.html">Favorilerim</a>
+          <a class="is-current" href="reading-list.html">Okuma Listesi</a>
+          <a href="about.html">Hikâyemiz</a>
+          <a href="contact.html">iletişim</a>
+        </nav>
+        <div class="header-actions">
+          <a class="action-icon-link" href="#" id="searchIconBtn" title="Ara" aria-label="Ürünleri ara"><svg class="action-svg" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg></a>
+          <a class="text-link" href="login.html">Giriş Yap</a>
+          <a class="button button-small" href="cart.html">
+            Sepetim <span class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">KiŞiSEL KÜTÜPHANEM</p>
+          <h1>Okuma <em>Listem</em></h1>
+          <p>Okumayı planladığın, şu an okuduğun ve tamamladığın kitaplar.</p>
+        </div>
+      </section>
+      <section class="section container">
+        <div class="book-grid">
+          <article class="product-card">
+            <a class="cover cover-blue" href="book-detail.html">
+              <span class="cover-label">ŞU AN OKUNUYOR</span>
+              <strong>Düşünmenin<br />inceliği</strong>
+              <small>SELiN YALÇIN</small>
+            </a>
+            <div class="product-info">
+              <p class="product-category">KiŞiSEL GELiŞiM</p>
+              <h3><a href="book-detail.html">Düşünmenin inceliği</a></h3>
+              <p class="author">ilerleme: %50 (Sayfa 140/280)</p>
+            </div>
+          </article>
+          <article class="product-card">
+            <a class="cover cover-coral" href="book-detail.html">
+              <span class="cover-label">SIRADAKi KiTAP</span>
+              <strong>Küçük<br />Şeylerin<br />Haritası</strong>
+              <small>DENiZ AKSOY</small>
+            </a>
+            <div class="product-info">
+              <p class="product-category">EDEBiYAT · ROMAN</p>
+              <h3><a href="book-detail.html">Küçük Şeylerin Haritası</a></h3>
+              <p class="author">Başlanmadı</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-bottom">
+        <span>Â© 2026 KitapKöşesi — Eğitim amaçlı demo proje.</span>
+        <span><a href="../index.html">Ana sayfa</a> · <a href="garanti.html">Ürün Desteği</a> · <a href="terms.html">Kullanım Şartları</a> · <a href="../gizlilik.html">Gizlilik Politikası</a></span>
+      </div>
+    </footer>
+    <div id="searchModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 2000; justify-content: center; align-items: flex-start; padding-top: 60px;"><div style="background: #fff; width: 90%; max-width: 650px; padding: 25px 30px; border-radius: 8px; position: relative; box-shadow: 0 15px 40px rgba(0,0,0,0.25);"><button id="closeSearchBtn" type="button" title="Kapat">&times;</button><div style="display: flex; align-items: center; border: 2px solid #ff5900; border-radius: 4px; padding: 4px 12px;"><input type="text" id="searchInput" placeholder="Aramak istediğiniz ürünü yazın..." autofocus><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg></div><div id="searchDropdownResults"></div></div></div>
+    <script src="../js/search.js"></script>
+    <script src="../js/chatbot.js"></script>
+  </body>
+</html>
+

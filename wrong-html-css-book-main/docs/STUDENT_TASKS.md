@@ -24,11 +24,14 @@
 
 ## Bonus görevler
 
-- [ ] CSS ile açılır kategori navigasyonu tasarla (JavaScript olmadan erişilebilirlik sınırlarını not et).
-- [ ] “Okuma listesi” sayfası ekle.
-- [ ] Ürün kartına stok durumu rozeti ekle.
-- [ ] Tasarım token'larını `variables.css` içinde gruplandır.
-- [ ] Koyu tema için ayrı bir CSS değişken seti tasarla; yalnızca CSS ile tema değiştirmenin sınırlarını açıkla.
-- [ ] Bir `404.html` hata sayfası oluştur.
-- [ ] Görsel varlıklar için `assets/images/` içinde bir kaynak ve lisans notu dosyası hazırla.
-- [ ] Lighthouse veya benzeri bir araçla erişilebilirlik ve performans kontrolü yap; sonucu raporla.
+- [X] CSS ile açılır kategori navigasyonu tasarla (JavaScript olmadan erişilebilirlik sınırlarını not et).
+- [X] “Okuma listesi” sayfası ekle.
+- [X] Ürün kartına stok durumu rozeti ekle.
+- [X] Tasarım token'larını `variables.css` içinde gruplandır.
+- [x] Koyu tema için ayrı bir CSS değişken seti tasarla; yalnızca CSS ile tema değiştirmenin sınırlarını açıkla. *Cevap:  **Yalnızca CSS ile Tema Değiştirmenin Sınırları:**
+ 1. **Kalıcılık yoktur:** Sayfa yenilenince (`F5`) veya başka sayfaya geçince tema sıfırlanır (hafızada tutmak için JavaScript/localStorage gerekir).
+2. **Sisteme bağlıdır:** `@media (prefers-color-scheme: dark)` sadece cihazın ayarlarına bakar, kullanıcının site içi butonla manuel ve kalıcı seçim yapmasına izin vermez.
+ 3. **Görseller değişmez**: CSS değişkenleri renkleri değiştirir ama `<img>` etiketindeki resimleri veya logoları dinamik olarak değiştiremez.
+- [x] Bir `404.html` hata sayfası oluştur.
+- [x] Görsel varlıklar için `assets/images/` içinde bir kaynak ve lisans notu dosyası hazırla.
+- [x] Lighthouse veya benzeri bir araçla erişilebilirlik ve performans kontrolü yap; sonucu raporla.

@@ -1,0 +1,97 @@
+﻿<!doctype html>
+<html lang="tr">
+  <head>
+    <meta name="author" content="Yusuf Oben Ay">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="KitapKöşesi - Sayfa Bulunamadı" />
+    <title>Sayfa Bulunamadı | KitapKöşesi</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">içeriğe geç</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html">
+          <span class="brand-mark">K</span>
+          <span>Kitap<span class="brand-accent">Köşesi</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Ana navigasyon">
+          <a href="../index.html">Ana Sayfa</a>
+          <a href="catalog.html">Kitaplar</a>
+          <a href="favorites.html">Favorilerim</a>
+          <a href="reading-list.html">Okuma Listesi</a>
+          <a href="about.html">Hikâyemiz</a>
+          <a href="contact.html">iletişim</a>
+        </nav>
+        <div class="header-actions">
+          <a class="action-icon-link" href="#" id="searchIconBtn" title="Ara" aria-label="Ürünleri ara"><svg class="action-svg" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg></a>
+          <a class="text-link" href="login.html">Giriş Yap</a>
+          <a class="button button-small" href="cart.html">
+            Sepetim <span class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="section container" style="text-align: center; padding: 80px 20px;">
+        <p class="eyebrow" style="color: var(--color-coral-dark); font-weight: 800; font-size: 1rem; letter-spacing: 0.15em;">HATA 404</p>
+        <h1 style="font-family: var(--font-display); font-size: clamp(2.5rem, 6vw, 4.5rem); margin: 12px 0 20px; color: var(--color-ink);">
+          Bu Sayfa Raflarda Yok.
+        </h1>
+        <p style="max-width: 520px; margin: 0 auto 36px; color: var(--color-muted); font-size: 1.05rem; line-height: 1.6;">
+          Aradığın sayfa kaldırılmış, taşınmış ya da hiç yazılmamış olabilir. Yeni rafları keşfetmek için kataloğa dönebilirsin.
+        </p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a class="button" href="../index.html" style="display: inline-block; padding: 12px 24px; background: var(--color-ink); color: var(--color-white); text-decoration: none; border-radius: 6px; font-weight: 700;">
+            Ana Sayfaya Dön
+          </a>
+          <a class="button" href="catalog.html" style="display: inline-block; padding: 12px 24px; background: transparent; color: var(--color-ink); border: 2px solid var(--color-ink); text-decoration: none; border-radius: 6px; font-weight: 700;">
+            Kataloğu incele
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div>
+          <a class="brand brand-footer" href="../index.html">
+            <span class="brand-mark">K</span>
+            <span>Kitap<span class="brand-accent">Köşesi</span></span>
+          </a>
+          <p>iyi hikâyelere açılan küçük bir kapı.</p>
+        </div>
+        <div>
+          <h2>Keşfet</h2>
+          <a href="catalog.html">Tüm kitaplar</a>
+          <a href="favorites.html">Favorilerim</a>
+          <a href="reading-list.html">Okuma Listesi</a>
+          <a href="about.html">Hikâyemiz</a>
+        </div>
+        <div>
+          <h2>Yardım</h2>
+          <a href="contact.html">iletişim</a>
+          <a href="cart.html">Sepetim</a>
+          <a href="garanti.html">Ürün Desteği</a>
+          <a href="terms.html">Kullanım Şartları</a>
+          <a href="../gizlilik.html">Gizlilik Politikası</a>
+        </div>
+        <div>
+          <h2>Bizi takip et</h2>
+          <p>Yeni kitaplar, yeni fikirler.</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>Â© 2026 KitapKöşesi — Eğitim amaçlı demo proje.</span>
+        <span>Sevgiyle, sayfalar arasında.</span>
+      </div>
+    </footer>
+    <div id="searchModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 2000; justify-content: center; align-items: flex-start; padding-top: 60px;"><div style="background: #fff; width: 90%; max-width: 650px; padding: 25px 30px; border-radius: 8px; position: relative; box-shadow: 0 15px 40px rgba(0,0,0,0.25);"><button id="closeSearchBtn" type="button" title="Kapat">&times;</button><div style="display: flex; align-items: center; border: 2px solid #ff5900; border-radius: 4px; padding: 4px 12px;"><input type="text" id="searchInput" placeholder="Aramak istediğiniz ürünü yazın..." autofocus><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg></div><div id="searchDropdownResults"></div></div></div>
+    <script src="../js/search.js"></script>
+    <script src="../js/chatbot.js"></script>
+  </body>
+</html>
+

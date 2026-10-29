@@ -17,4 +17,3 @@
 4. Menü, butonlar, kartlar, form alanları ve footer'ı incele.
 5. Yatay taşma varsa hangi elementin taşırdığını DevTools ile bul.
 6. Düzeltmeyi yap ve tekrar test et.
-7.

@@ -1,4 +1,4 @@
-.site-footer { background: #242720; color: #f8f6ef; padding-top: 62px; }
+﻿.site-footer { background: #242720; color: #f8f6ef; padding-top: 62px; }
 .footer-main { display: grid; grid-template-columns: 2fr 1fr 1fr 1.3fr; gap: 40px; padding-bottom: 55px; }
 .brand-footer { color: var(--color-white); margin-bottom: 15px; }
 .footer-main p { color: #b9bcb2; font-size: .88rem; }
